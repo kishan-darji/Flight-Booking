@@ -1,0 +1,142 @@
+{
+	"id": "deccbfae-2329-f1f6-d832-4cf12493e8cb",
+	"name": "Flight-Booking",
+	"description": "",
+	"order": [
+		"781eade9-4669-e4c3-37f6-84c07286fc58",
+		"d03050fc-3b7f-4685-ede3-58ec504d79d7",
+		"cf4c8025-32bd-c9c9-b507-43e6add7f8d0",
+		"49dea1fa-505f-cff7-2d2a-ab8b853cea89"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1589213430384,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "49dea1fa-505f-cff7-2d2a-ab8b853cea89",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/api/v2/json/bookSeat",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "deccbfae-2329-f1f6-d832-4cf12493e8cb",
+			"data": [],
+			"dataMode": "raw",
+			"name": "BookSeat",
+			"description": "http://localhost:8081/api/v2/json/bookSeat",
+			"descriptionFormat": "html",
+			"time": 1589213637090,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"flightNumber\" : \"ABC\", \"userName\":\"Kishan\"\n}"
+		},
+		{
+			"id": "781eade9-4669-e4c3-37f6-84c07286fc58",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/api/v2/json/flight",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "deccbfae-2329-f1f6-d832-4cf12493e8cb",
+			"data": [],
+			"dataMode": "raw",
+			"name": "AddFlight",
+			"description": "http://localhost:8081/api/v2/json/flight",
+			"descriptionFormat": "html",
+			"time": 1589213495617,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"flightNumber\":\"ABC\"\n}"
+		},
+		{
+			"id": "cf4c8025-32bd-c9c9-b507-43e6add7f8d0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8081/api/v2/json/scheduleFlight",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "deccbfae-2329-f1f6-d832-4cf12493e8cb",
+			"data": [],
+			"dataMode": "raw",
+			"name": "ScheduleFlight",
+			"description": "http://localhost:8081/api/v2/json/scheduleFlight",
+			"descriptionFormat": "html",
+			"time": 1589213611951,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"flightNumber\" : \"ABC\", \"noOfSeats\":50\n}"
+		},
+		{
+			"id": "d03050fc-3b7f-4685-ede3-58ec504d79d7",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8081/api/v2/json/getAvailableSeats?flightNumber=ABC",
+			"queryParams": [
+				{
+					"key": "flightNumber",
+					"value": "ABC",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "deccbfae-2329-f1f6-d832-4cf12493e8cb",
+			"data": null,
+			"dataMode": "params",
+			"name": "GetAvailableSeats",
+			"description": "http://localhost:8081/api/v2/json/getAvailableSeats?flightNumber=ABC",
+			"descriptionFormat": "html",
+			"time": 1589213572853,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
